@@ -1,0 +1,27 @@
+<github에서 자신의 컴퓨터로 옮겨 받는 법>
+git clone 깃헙주소 폴더이름
+
+cd 폴더이름
+
+code .
+
+<github에 업데이트 하는 법>
+git add .
+
+git commit -m "업데이트 이름(Ex 최종본)"
+
+git push origin main <- main으로 푸시하는 거임, 하지만 main은 최종 상품(브랜치)이므로 두번째 상품(브랜치)으로 푸시하는 게 좋음.(Ex second main)
+
+<두번째 상품(브랜치) 만드는 법>
+git checkout -b second main
+
+git push origin second main
+
+<동기화 시키는 방법>
+git add .
+
+git commit -m "업데이트 이름(Ex 최종본)"
+
+git pull origin main <- main에서 소스코드를 받아온다
+
+git push origin main
