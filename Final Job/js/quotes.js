@@ -49,6 +49,6 @@ const quoteBox = document.querySelector("#quote");
 function showQuote() {
     const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
     quote.innerText = todaysQuote.quote;
-    author.innerText = todaysQuote.author;
+    author.innerText = `_ ${todaysQuote.author}`;
     quoteBox.classList.remove(HIDDEN_CLASSNAME);
 }
