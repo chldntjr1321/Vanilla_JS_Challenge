@@ -6,7 +6,7 @@
         <title>Momentum</title>
     </head>
     <body>
-        <div class="container">
+        <div class="container-greeting">
             <h2 id="clock">00:00:00</h2>
             <form class="hidden" id="login-form">
                 <input 
@@ -16,28 +16,31 @@
                     placeholder="What is your name?" />
                 <input type="submit" value="Log In" />
             </form>
-            
             <h1 id="greeting" class="hidden"></h1>
         
+        </div>
+        <div class="container-todo">
+            <h2>ToDo List</h2>
             <form id="todo-form">
                 <input type="text"
                 placeholder="Write a To Do and Press Enter"
                 required
-                maxlength="40"/>
+                maxlength="15"/>
                 <button id="addToDo">+</button>
             </form>
-            
             <ul id="todo-list"></ul>
-
-            <footer id="quote" class="hidden">
-                <span></span>
-                <span></span>
-            </footer>
+        </div>
+        <div class="container-weather">
             <div id="weather">
                 <span></span>
                 <span></span>
             </div>
         </div>
+
+        <footer id="quote" class="hidden">
+            <span></span>
+            <span></span>
+        </footer>
 
         <script src="js/quotes.js"></script>
         <script src="js/greeting.js"></script>

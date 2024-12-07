@@ -13,7 +13,8 @@ body, html {
     
 }
 
-.container {
+.container-greeting {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,6 +24,35 @@ body, html {
     border-radius: 10px;
     background-origin: padding-box;
     padding: 30px;
+}
+.container-todo {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20vw;
+    min-width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(240, 248, 255, 0.829);
+    border-radius: 10px;
+    background-origin: padding-box;
+    padding : 5px 10px 0px 10px;
+}
+.container-weather {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(240, 248, 255, 0.829);
+    background-origin: padding-box;
+    padding: 5px;
 }
 
 footer {
@@ -40,6 +70,39 @@ ul {
     padding: 0;
 }
 
+#todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px; /* 항목 간 간격 추가 */
+}
+
+#todo-list span {
+    margin-right: 10px; /* 체크박스와 텍스트 사이 간격을 조절 */
+    flex-grow: 1; /* 텍스트가 남는 공간을 차지하게 하여 버튼이 오른쪽 끝에 배치됨 */
+}
+
+button {
+    cursor: pointer;
+}
+
+
+
+
 .hidden {
     display: none;
+}
+
+#greeting {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 10px;
+}
+
+#clock {
+    font-size: 6rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 10px;
 }
