@@ -74,11 +74,11 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 5px; /* 항목 간 간격 추가 */
+    margin-bottom: 5px;
 }
 
 #todo-list span {
-    margin-right: 10px; /* 체크박스와 텍스트 사이 간격을 조절 */
+    margin-right: 10px; 
     flex-grow: 1; /* 텍스트가 남는 공간을 차지하게 하여 버튼이 오른쪽 끝에 배치됨 */
 }
 
