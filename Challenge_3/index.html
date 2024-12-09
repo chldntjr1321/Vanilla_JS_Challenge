@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+        <meta charset="UTF-8">
+        <title>Momentum</title>
+    </head>
+    <body>
+        <h1>Random Number Game</h1>
+
+        <form id="range">
+            <label for="inputRange">Generate a number between 0 and</label>
+            <input id="inputRange" type="number" required min="0" />
+        </form>
+        <p></p>
+
+        <form id="guess">
+            <label for="numberGuess">Guess the number : </label>
+            <input id="numberGuess" type="number" required min="0" />
+            <button>Play!</button>
+        </form>
+
+            <div></div>
+            <div id="result"></div>
+
+        <script src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+form {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+#range, #result {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
