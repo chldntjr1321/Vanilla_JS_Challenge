@@ -10,21 +10,54 @@ body, html {
     justify-content: center;
     align-items: center;
     font-family: 'Times New Roman', serif;
-    
+    width: 100vw;
 }
 
+audio{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    width: 300px;
+    height: 20px;
+}
+
+.musicbtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px; /* 버튼 크기 */
+    height: 50px; /* 버튼 크기 */
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; /* 배경 제거 */
+}
+
+.musicbtn img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+
+
 .container-greeting {
+    width: 40vw;
+    max-width: 0 auto;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgba(240, 248, 255, 0.829);
-    border-radius: 10px;
+    background: linear-gradient(to right, rgba(240, 248, 255, 0) 0%, rgba(240, 248, 255, 1) 50%, rgba(240, 248, 255, 0) 100%);
     background-origin: padding-box;
     padding: 30px;
 }
+
 .container-todo {
     position: absolute;
     right: 20px;
@@ -32,7 +65,7 @@ body, html {
     transform: translateY(-50%);
     width: 20vw;
     min-width: 20vw;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -41,6 +74,38 @@ body, html {
     background-origin: padding-box;
     padding : 5px 10px 0px 10px;
 }
+.container-todo.visible {
+    display: flex; /* 보일 때만 flex로 설정 */
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.container-todo.hidden {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.ShowTodo {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ShowTodo img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+
 .container-weather {
     position: absolute;
     left: 10px;
@@ -49,20 +114,25 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     background-color: rgba(240, 248, 255, 0.829);
     background-origin: padding-box;
     padding: 5px;
 }
 
+
 footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 10px 0;
+}
+#quote span:first-child {
+    font-weight: bold;
+    font-size: 20px;
 }
 
 ul {
@@ -82,16 +152,12 @@ ul {
     flex-grow: 1; /* 텍스트가 남는 공간을 차지하게 하여 버튼이 오른쪽 끝에 배치됨 */
 }
 
-button {
-    cursor: pointer;
-}
-
-
 
 
 .hidden {
     display: none;
 }
+
 
 #greeting {
     font-size: 2rem;

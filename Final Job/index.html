@@ -6,6 +6,13 @@
         <title>Momentum</title>
     </head>
     <body>
+        <audio src="about_music/jazz.mp3" autoplay loop></audio>
+
+        <button class="musicbtn">
+            <img src="about_music/musicImg.png" alt="music Button">
+        </button>
+        
+
         <div class="container-greeting">
             <h2 id="clock">00:00:00</h2>
             <form class="hidden" id="login-form">
@@ -17,8 +24,8 @@
                 <input type="submit" value="Log In" />
             </form>
             <h1 id="greeting" class="hidden"></h1>
-        
         </div>
+
         <div class="container-todo">
             <h2>ToDo List</h2>
             <form id="todo-form">
@@ -30,17 +37,22 @@
             </form>
             <ul id="todo-list"></ul>
         </div>
+        
         <div class="container-weather">
             <div id="weather">
-                <span></span>
-                <span></span>
+                <div></div>
+                <div></div>
             </div>
         </div>
-
+        
         <footer id="quote" class="hidden">
             <span></span>
             <span></span>
         </footer>
+
+        <button class="ShowTodo">
+            <img src="about_music/note.png" alt="ToDo Button">
+        </button>
 
         <script src="js/quotes.js"></script>
         <script src="js/greeting.js"></script>
@@ -48,6 +60,8 @@
         <script src="js/background.js"></script>
         <script src="js/todo.js"></script>
         <script src="js/weather.js"></script>
+        <script src="js/music.js"></script>
+        <script src="js/todoBtn.js"></script>
 
     </body>
 </html>
