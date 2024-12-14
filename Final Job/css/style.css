@@ -26,14 +26,14 @@ audio{
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 50px; /* 버튼 크기 */
-    height: 50px; /* 버튼 크기 */
+    width: 50px;
+    height: 50px;
     border: none;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: transparent; /* 배경 제거 */
+    background-color: transparent;
 }
 
 .musicbtn img {
@@ -41,8 +41,6 @@ audio{
     height: 50px;
     object-fit: cover;
 }
-
-
 
 .container-greeting {
     width: 40vw;
@@ -75,7 +73,7 @@ audio{
     padding : 5px 10px 0px 10px;
 }
 .container-todo.visible {
-    display: flex; /* 보일 때만 flex로 설정 */
+    display: flex;
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
 }
@@ -107,19 +105,26 @@ audio{
 
 
 .container-weather {
-    position: absolute;
-    left: 10px;
-    top: 10px;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: left;
-    background-color: rgba(240, 248, 255, 0.829);
+    text-align: center;
+    /*background-color: rgba(240, 248, 255, 0.829);*/
     background-origin: padding-box;
     padding: 5px;
+    margin: auto;
+    font-size: 20px;
 }
 
+
+
+.highlight {
+    color:blueviolet;
+    font-size: 30px;
+    font-weight: bold;
+}
 
 footer {
     position: absolute;
