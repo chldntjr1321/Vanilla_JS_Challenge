@@ -7,6 +7,7 @@ body, html {
     padding: 0;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Times New Roman', serif;
@@ -44,7 +45,6 @@ audio{
 
 .container-greeting {
     width: 40vw;
-    max-width: 0 auto;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -55,6 +55,77 @@ audio{
     background-origin: padding-box;
     padding: 30px;
 }
+
+
+.btn-container {
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    display: flex; 
+    gap: 10px; 
+    flex-direction: column;
+}
+
+
+.dropdown-button {
+    width: 50px;
+    height: 50px; 
+    border-radius: 50%; 
+    border: none; 
+    overflow: hidden; 
+    background-color: transparent; 
+    padding: 0; 
+    cursor: pointer; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+
+.dropdown-button img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+
+.dropdown-menu {
+    position: fixed; 
+    top: 50px; 
+    left: 0;
+    background-color: transparent; 
+    border-radius: 5px;
+    display: none; 
+    flex-direction: column;
+    gap: 10px; 
+    padding: 10px;
+    z-index: 1000; 
+}
+
+.dropdown-menu.active {
+    display: flex; 
+}
+
+.dropdown-menu button {
+    width: 50px;
+    height: 50px; 
+    border-radius: 50%; 
+    border: none; 
+    overflow: hidden; 
+    background-color: transparent; 
+    padding: 0; 
+    cursor: pointer; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-menu button img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
 
 .container-todo {
     position: absolute;
@@ -121,8 +192,8 @@ audio{
 
 
 .highlight {
-    color:blueviolet;
-    font-size: 30px;
+    color: darkgreen;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -176,4 +247,39 @@ ul {
     font-weight: bold;
     padding: 0;
     margin: 10px;
+}
+
+.search {
+    height: 28px;
+    width: 500px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50px;
+    padding: 9px;
+    border: 1px solid #c5c5c54f;
+    margin-top: 10px;
+}
+.search-text {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding-left: 5px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+    width: 350px;
+}
+.search-btn {
+    color: #0f1b5f;
+    float: right;
+    width: 40px;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
