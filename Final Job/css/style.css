@@ -191,11 +191,17 @@ audio{
 
 
 
-.highlight {
+.highlight1 {
     color: darkgreen;
     font-size: 25px;
     font-weight: bold;
 }
+.highlight2 {
+    color: rgb(34, 15, 65);
+    font-size: 25px;
+    font-weight: bold;
+}
+
 
 footer {
     position: absolute;
